@@ -1,0 +1,37 @@
+# speeduntrap boot entry for NBT starter (HmiMain3D already running).
+#
+# LIVE file:  /opt/sys/etc/starter.cfg
+#             (= /fs/sda0/opt/sys/etc/starter.cfg.0x10ee or .0x1c42)
+# OEM backup: /fs/sda0/repository/istep/opt/sys/etc/starter.cfg  — DO NOT TOUCH
+#
+# Run ONCE from SSH (do not edit starter.cfg by hand):
+#   copy hu/ onto /fs/sda0/ then:
+#   chmod 775 /fs/sda0/install_boot.sh /fs/sda0/start_speeduntrap.sh /fs/sda0/speeduntrap
+#   /fs/sda0/install_boot.sh
+#   shutdown -S reboot
+#
+# HostsProcess sits next to HmiMain3D.
+# OnTerminate IGNORE_ALL — a radar crash must NOT reboot the HU.
+# FinalAction IGNORE    — never SHUTDOWN_SYSTEM.
+#
+#    <Process>
+#      <Number>104</Number>
+#      <Name>/opt/sys/bin/start_speeduntrap.sh</Name>
+#      <Args/>
+#      <ResArgs/>
+#      <Prio>10</Prio>
+#      <Partition>softrt_SYS</Partition>
+#      <StartParam>BACKGROUND</StartParam>
+#      <OnTerminate>IGNORE_ALL</OnTerminate>
+#      <Shutdown>IGNORE</Shutdown>
+#      <ShutdownThread>-1</ShutdownThread>
+#      <KeepInterface>true</KeepInterface>
+#      <MaxProcessRestarts>0</MaxProcessRestarts>
+#      <FinalAction>IGNORE</FinalAction>
+#      <VariantCode>-1</VariantCode>
+#      <VariantMask>-1</VariantMask>
+#      <ProvidesInterface/>
+#      <RequiresInterface/>
+#      <RequiresEnvironment/>
+#    </Process>
+#

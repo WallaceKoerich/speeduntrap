@@ -1,0 +1,4 @@
+# Fallback car position used ONLY if PosReal.DNAVIPos attach fails.
+# lat lon [heading]
+# Do not leave the TEST pin here or the overlay sits on 0 m.
+-26.961387 -50.422295 28

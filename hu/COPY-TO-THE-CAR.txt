@@ -1,0 +1,20 @@
+Copy onto the head unit USB (/fs/sda0):
+
+  speeduntrap              ->  /fs/sda0/speeduntrap
+  radar/points.txt         ->  /fs/sda0/radar/points.txt
+  radar/chime.wav          ->  /fs/sda0/radar/chime.wav
+  radar/map.bin            ->  /fs/sda0/radar/map.bin     (~1.1 GB)
+  start_speeduntrap.sh     ->  /fs/sda0/start_speeduntrap.sh
+  install_boot.sh          ->  /fs/sda0/install_boot.sh     (once)
+  rollback_boot.sh         ->  /fs/sda0/rollback_boot.sh
+
+Keep Unix LF on the .sh files. Then SSH:
+
+  mount -uw /fs/sda0
+  mkdir -p /fs/sda0/radar
+  chmod 775 /fs/sda0/speeduntrap /fs/sda0/start_speeduntrap.sh /fs/sda0/install_boot.sh
+  /fs/sda0/speeduntrap
+
+Optional auto-start:  /fs/sda0/install_boot.sh   then   shutdown -S reboot
+
+Full instructions: README.md in the parent folder.

@@ -1,0 +1,50 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  background: #161616;
+  color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.page {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+}
+
+.chrome {
+  width: min(1280px, calc(100vw - 32px));
+  display: flex;
+  gap: 24px;
+  align-items: baseline;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: #b0b0b0;
+}
+
+.chrome .hint {
+  margin-left: auto;
+  color: #808080;
+}
+
+.cid {
+  width: min(1280px, calc(100vw - 32px));
+  aspect-ratio: 1280 / 480;
+  height: auto;
+  position: relative;
+  box-shadow: 0 0 0 1px #000000, 0 12px 40px rgba(0, 0, 0, 0.65);
+  background: #282828;
+}
+
+.cid canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+}

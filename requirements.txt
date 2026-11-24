@@ -1,0 +1,2 @@
+# Python 3.10+ on the PC. The car does not run Python.
+osmiter>=1.1.0

@@ -1,0 +1,25 @@
+Required Notice: Copyright (c) 2026 Wallace Koerich.
+https://github.com/WallaceKoerich/speeduntrap
+
+This software is licensed under the PolyForm Noncommercial License 1.0.0.
+You may use, study, modify, and contribute. You may not sell it or use it
+for a commercial purpose. See LICENSE.
+
+---
+
+Speed-trap coordinates and metadata in data/ and hu/radar/points.txt come
+from the public Bunda de Urso cadastro, licensed CC BY 4.0.
+
+  Bunda de Urso — cadastro nacional de radares
+  https://servidor3.lucas.inf.br/openclaw/radar/
+
+That compilation is not this project. Do not copy Bunda de Urso collector,
+schema, API, or web code into this repository. Missing GPS stays missing.
+
+---
+
+Road geometry in map.bin / OSM extracts is © OpenStreetMap contributors,
+ODbL 1.0. https://www.openstreetmap.org/copyright
+
+Map colors follow Snazzy Maps style 145431 “Orange”.
+https://snazzymaps.com/style/145431/orange

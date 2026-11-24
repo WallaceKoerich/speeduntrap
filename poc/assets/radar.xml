@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pluginApps>
+  <pluginApp applicationType="OnlineServices" applicationWeight="50" text="speeduntrap">
+    <actions>
+      <combinedAction id="10" sync="false">
+        <actions>
+          <raAction id="11"/>
+          <hmiAction id="12" target="20"/>
+        </actions>
+      </combinedAction>
+      <raAction id="13"/>
+      <raAction id="14"/>
+      <raAction id="15"/>
+    </actions>
+    <models>
+      <textIdModel id="1" textId="1"/>
+      <imageIdModel id="2" imageId="55010"/>
+      <raDataModel id="3" modelType="String"/>
+      <raBoolModel id="4"/>
+      <textIdModel id="5" textId="2"/>
+      <raDataModel id="6" modelType="String"/>
+      <textIdModel id="7" textId="6"/>
+      <textIdModel id="8" textId="7"/>
+      <raBoolModel id="9"/>
+      <raBoolModel id="10"/>
+    </models>
+    <events/>
+    <hmiStates>
+      <hmiState id="20" text="speeduntrap">
+        <components>
+          <checkbox action="13" id="21" model="4" text="Popup" textModel="5"/>
+          <label id="22" model="3" text="Ready"/>
+          <label id="23" model="6" text="Range 500 m"/>
+          <checkbox action="14" id="24" model="9" text="Range -" textModel="7"/>
+          <checkbox action="15" id="25" model="10" text="Range +" textModel="8"/>
+        </components>
+      </hmiState>
+    </hmiStates>
+    <entryButton id="100" model="1" action="10" imageModel="2">
+      <properties>
+        <property id="23" value="2"/>
+      </properties>
+    </entryButton>
+  </pluginApp>
+</pluginApps>

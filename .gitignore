@@ -1,0 +1,21 @@
+# Huge HU map pack (~1.1 GB). Build it, or copy from a Release / USB folder.
+hu/radar/map.bin
+poc/radar/map.bin
+
+# OSM extracts and the 292k JSON tile cache
+data/maps/*.osm.pbf
+data/maps/*.pbf
+data/maps/tiles/
+data/maps/pc_extract.json
+
+# Fetch leftovers
+data/raw/**/fetch-progress.json
+__pycache__/
+*.pyc
+*.o
+*.obj
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.bak

@@ -1,0 +1,67 @@
+{
+  "attribution": "Bunda de Urso — cadastro nacional de radares (https://servidor3.lucas.inf.br/openclaw/radar/)",
+  "license": "CC BY 4.0 for the published compilation; respect each original source",
+  "source_api": "https://servidor3.lucas.inf.br/openclaw/radar/api.pse",
+  "snapshot_id": "rb-20261103T191816070767Z",
+  "publicado_em": "2026-11-03T19:18:16+00:00",
+  "scope": "BR",
+  "points": 54982,
+  "with_gps": 11463,
+  "without_gps": 43519,
+  "pages": 55,
+  "bytes_downloaded": 247545006,
+  "bytes_written": 24879636,
+  "by_uf": {
+    "AC": 9,
+    "AL": 344,
+    "AM": 91,
+    "AP": 41,
+    "BA": 1454,
+    "CE": 2617,
+    "DF": 2315,
+    "ES": 1280,
+    "GO": 5595,
+    "MA": 449,
+    "MG": 5959,
+    "MS": 981,
+    "MT": 944,
+    "PA": 768,
+    "PB": 627,
+    "PE": 1357,
+    "PI": 577,
+    "PR": 3465,
+    "RJ": 2566,
+    "RN": 480,
+    "RO": 274,
+    "RR": 39,
+    "RS": 3186,
+    "SC": 2322,
+    "SE": 432,
+    "SP": 15030,
+    "TO": 601,
+    "sem_uf": 1178,
+    "TEST": 1
+  },
+  "api_status_totais": {
+    "total": 54981,
+    "federal": 6732,
+    "estadual": 4523,
+    "municipal": 3478,
+    "nao_classificado": 40248
+  },
+  "started_at": "2026-11-04T00:23:03.682720+00:00",
+  "finished_at": "2026-11-04T00:33:46.145669+00:00",
+  "files": {
+    "points": "points.ndjson"
+  },
+  "test_controls": {
+    "file": "data/local/test-controls.ndjson",
+    "ids": [
+      "P-TEST-1"
+    ],
+    "added_this_run": [
+      "P-TEST-1"
+    ],
+    "applied_at": "2026-11-04T00:43:50.848615+00:00"
+  }
+}
